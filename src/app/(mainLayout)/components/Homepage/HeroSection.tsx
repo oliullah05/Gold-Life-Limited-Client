@@ -7,7 +7,7 @@ const doctorImg =
 
 export default function HeroSection() {
   return (
-    <section className="relative  w-full  bg-blue-50  px-4 md:px-8 lg:px-16 xl:px-24 pt-12 pb-5 flex items-stretch">
+    <section className="relative  w-full  bg-blue-50  pt-12 pb-5 flex items-stretch">
       {/* Background image as an overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -19,7 +19,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="primary-container border gap-10 flex lg:flex-row flex-col justify-between mx-auto items-stretch relative  w-full">
+      <div className="primary-container  gap-10 flex lg:flex-row flex-col justify-between mx-auto items-stretch relative  w-full">
         {/* Text Section */}
         <div className="flex-1 flex flex-col justify-center   text-left h-full">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-secondary_color leading-tight">

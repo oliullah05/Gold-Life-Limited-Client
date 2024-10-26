@@ -11,7 +11,7 @@ export default function HomePageLayout<T extends React.ReactNode>({
     <div className="  ">
       <NavbarMarquee />
       <Navbar />
-      <div className="h-screen">
+      <div className="min-h-screen">
       {children}
       </div>
       <Footer />

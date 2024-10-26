@@ -157,19 +157,19 @@ const Navbar: React.FC = () => {
   // }
   return (
     <nav className="bg-secondary_color   py-2 top-0 w-full ">
-      <div className=" primary-container  mx-auto  ">
-        <div className="flex items-center justify-between h-16">
+      <div className=" primary-container mx-auto  ">
+        <div className="flex items-center  justify-between h-16">
           <div className="flex items-center justify-between md:justify-between w-full">
             <div className="flex-shrink-0">
               <Link href="#" className="text-white font-bold text-lg">
-                <div>
+                <div>    
                  
                  <div className="text text-4xl ">
                    
                    <Image
                    className="rounded-full "
                      src={Gold_Life_Logo}
-                     alt="Formatic Trucking Inc"
+                     alt="goldlifelogo"
                      width={60}
                      height={60}
                    ></Image>
@@ -230,7 +230,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <div className={`md:hidden ${isOpen ? "block" : "hidden"} text-center `}>
+      <div className={`md:hidden  ${isOpen ? "block" : "hidden"} text-center `}>
         <div className="px-2 pt-2 pb-3 sm:px-3 ">
           <div className="flex flex-col gap-4 ">{dropdownItems}</div>
         </div>
