@@ -5,8 +5,8 @@ import Link from "next/link";
 
 import Gold_Life_Logo from "@/app/(mainLayout)/assets/logos/Gold_Life_Logo.jpg";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
+// import { useRouter } from "next/navigation";
+
 
 interface DropdownProps {
   title: { label: string; link: string };
@@ -63,7 +63,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
 
   return (
     <div
-      className={`dropdown inline-block  text-white hover:text-purple-700 font-bold text-sm  tracking-wide ${styles.dropdown}`}
+      className={`dropdown inline-block  text-white hover:text-primary_color font-bold text-sm  tracking-wide ${styles.dropdown}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleToggle}
@@ -72,14 +72,14 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
       <div className="flex justify-center items-center">
         <Link
           href={title.link}
-          className="px-2 md:px-0  py-2 rounded-md  hover:text-white font-bold text-[1rem]"
+          className="px-2 md:px-0  py-2 rounded-md  hover:text-primary_color font-bold text-[1rem]"
         >
           {title.label}
         </Link>
         {items.length ? DownArrowIcon : null}
       </div>
       <div
-        className="dropdown-menu md:absolute relative   h-auto flex md:mt-8  overflow-hidden  shadow-lg "
+        className="dropdown-menu md:absolute relative   h-auto flex md:pt-8  overflow-hidden  shadow-lg "
         style={{
           maxHeight: isOpen ? "500px" : "0",
           opacity: isOpen ? 1 : 0,
@@ -93,9 +93,9 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
               <li key={index} className="py-1 ">
                 <Link
                   href={item.link!}
-                  className="block text-purple-500 font-bold text-base uppercase hover:text-purple-700 cursor-pointer "
+                  className="block text-primary_color font-bold text-base uppercase  cursor-pointer "
                 >
-                <span className="text-[.8rem]">  {item.label}</span>
+                <span className="text-[.8rem] hover:shadow-lg text-underLine-animation">  {item.label}</span>
                 </Link>
               </li>
             ))}
@@ -109,7 +109,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
 
 
 const Navbar: React.FC = () => {
-  const router = useRouter()
+  // const router = useRouter()
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -152,16 +152,16 @@ const Navbar: React.FC = () => {
     </>
   );
 
-  const handleLogoClick = ()=>{
-    router.replace("/")
-  }
+  // const handleLogoClick = ()=>{
+  //   router.replace("/")
+  // }
   return (
     <nav className="bg-secondary_color sticky py-2 top-0 w-full ">
       <div className=" primary-container mx-auto  ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center justify-between md:justify-between w-full">
             <div className="flex-shrink-0">
-              <a href="#" className="text-white font-bold text-lg">
+              <Link href="#" className="text-white font-bold text-lg">
                 <div>
                  
                  <div className="text text-4xl ">
@@ -175,15 +175,15 @@ const Navbar: React.FC = () => {
                    ></Image>
                  </div>
                 </div>
-              </a>
+              </Link>
             </div>
             
             <div className="hidden md:block ">
-              <div className=" flex items-baseline space-x-4 gap-5">
+              <div className=" flex items-baseline space-x-4 gap-2 lg:gap-5">
                 {dropdownItems}
               </div>
             </div>
-            <Button>Book a schedule</Button>
+            <button className="bg-white border-primary_color border  hidden sm:block rounded-md  p-3 px-4 text-sm  text-primary_color">Book a schedule</button>
           </div>
 
           
