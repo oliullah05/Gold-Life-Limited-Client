@@ -141,6 +141,12 @@ body {
 }
 
 
+.primary-container {
+  @apply max-w-7xl;
+  
+}
+
+
 *{
   /* border: 1px solid red; */
   margin: 0;
