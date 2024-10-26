@@ -145,12 +145,12 @@ body {
 
 
 .primary-container {
-  @apply max-w-6xl px-4 md:px-6 ;
+  @apply max-w-6xl px-4 md:px-6    ; 
   
 }
 
 .translateX-animation {
-  animation: TranslateX 4s ease-in-out infinite alternate;
+  animation: TranslateX 3s ease-in-out infinite alternate;
 }
 
 @keyframes TranslateX {
@@ -232,6 +232,130 @@ body {
     opacity: 0; 
   }
 }
+
+
+
+.playButtonAnimationWhite {
+  width: 50px; 
+  height: 50px; 
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0; 
+  border: none; 
+  outline: none; 
+}
+
+.playButtonAnimationWhite:before,
+.playButtonAnimationWhite:after {
+  content: '';
+  position: absolute; 
+  width: 60px; 
+  height: 60px; 
+  background: rgba(255, 255, 255, 0.54); /* Changed to white */
+  border-radius: 50%; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%) scale(0); 
+  opacity: 0; 
+}
+
+.playButtonAnimationWhite:before {
+  animation: waveFade 0.8s ease-out forwards, 
+             wavePulse 2s ease-out infinite, 
+             pulse3 1.5s ease-out infinite,
+             pulse4 2.5s ease-out infinite; /* Added additional pulses */
+}
+
+.playButtonAnimationWhite:after {
+  animation: waveFade 0.8s ease-out forwards, 
+             wavePulse2 2s ease-out infinite, 
+             pulse5 2s ease-out infinite; /* Added another pulse */
+  animation-delay: 0.4s; 
+}
+
+/* Extra pulse animations */
+@keyframes pulse3 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.8); /* Scale up for pulse3 */
+    opacity: 0; 
+  }
+}
+
+@keyframes pulse4 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2); /* Scale up for pulse4 */
+    opacity: 0; 
+  }
+}
+
+@keyframes pulse5 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up for pulse5 */
+    opacity: 0; 
+  }
+}
+
+@keyframes waveFade {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes wavePulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up */
+    opacity: 0;
+  }
+}
+
+@keyframes wavePulse2 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up */
+    opacity: 0; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .text-underLine-animation {
   position: relative;
