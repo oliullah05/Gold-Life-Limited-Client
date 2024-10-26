@@ -79,7 +79,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
         {items.length ? DownArrowIcon : null}
       </div>
       <div
-        className="dropdown-menu md:absolute relative   h-auto flex md:pt-8  overflow-hidden  shadow-lg "
+        className="dropdown-menu z-40 md:absolute relative   h-auto flex md:pt-8  overflow-hidden  shadow-lg "
         style={{
           maxHeight: isOpen ? "500px" : "0",
           opacity: isOpen ? 1 : 0,
@@ -156,8 +156,8 @@ const Navbar: React.FC = () => {
   //   router.replace("/")
   // }
   return (
-    <nav className="bg-secondary_color sticky py-2 top-0 w-full ">
-      <div className=" primary-container mx-auto  ">
+    <nav className="bg-secondary_color   py-2 top-0 w-full ">
+      <div className=" primary-container  mx-auto  ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center justify-between md:justify-between w-full">
             <div className="flex-shrink-0">

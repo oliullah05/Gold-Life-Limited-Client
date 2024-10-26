@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
       <footer className="bg-transparent mt-[-2px]">
         <div className="bg-secondary_color ">
-          <div className="primary-container mx-auto  ">
+          <div className="primary-container mx-auto   ">
             <div className="footer py-10 px-4 lg:p-10 flex md:flex-row gap-10 md:gap-2 flex-col md:items-center justify-between  text-white md:place-items-center  ">
               <aside className="flex gap-5  md:justify-center items-center  lg:px-10 ">
                 <>
