@@ -6,6 +6,7 @@ import Link from "next/link";
 import Gold_Life_Logo from "@/app/(mainLayout)/assets/logos/Gold_Life_Logo.jpg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 interface DropdownProps {
   title: { label: string; link: string };
@@ -141,21 +142,11 @@ const Navbar: React.FC = () => {
           { label: "Cross Dock", link: "service/Cross Dock" },
         ]}
       />
-      <Dropdown title={{ label: "News", link: "/news" }} items={[]} />
+    
+      <Dropdown title={{ label: "Shop", link: "/shop" }} items={[]} />
+      <Dropdown title={{ label: "Blog", link: "/blog" }} items={[]} />
       <Dropdown
-        title={{ label: "Career", link: "/Career" }}
-        items={[
-          { label: "Company Driver", link: "Career/Company Driver" },
-          { label: "Owner Operators", link: "Career/Owner Operators" },
-          {
-            label: "administrative-careers",
-            link: "Career/administrative-careers",
-          },
-        ]}
-      />
-      <Dropdown title={{ label: "Form", link: "/Form" }} items={[]} />
-      <Dropdown
-        title={{ label: "Contact Us", link: "/Contact" }}
+        title={{ label: "Contact", link: "/Contact" }}
         items={[{ label: "Location", link: "/Location" }]}
       />
     </>
@@ -165,10 +156,10 @@ const Navbar: React.FC = () => {
     router.replace("/")
   }
   return (
-    <nav className="bg-gray-900 sticky top-0 w-full ">
-      <div className="max-w-7xl primary-container mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-secondary_color sticky py-2 top-0 w-full ">
+      <div className=" primary-container mx-auto  ">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center justify-between md:justify-evenly w-full">
+          <div className="flex items-center justify-between md:justify-between w-full">
             <div className="flex-shrink-0">
               <a href="#" className="text-white font-bold text-lg">
                 <div>
@@ -186,12 +177,18 @@ const Navbar: React.FC = () => {
                 </div>
               </a>
             </div>
+            
             <div className="hidden md:block ">
               <div className=" flex items-baseline space-x-4 gap-5">
                 {dropdownItems}
               </div>
             </div>
+            <Button>Book a schedule</Button>
           </div>
+
+          
+
+
           <div className="md:hidden">
             <button
               onClick={handleToggle}
