@@ -33,6 +33,7 @@ export default function Register () {
     useState<boolean>(false);
   const handleLoginSubmit = async(event: FormEvent<HTMLFormElement>) => {
     setIsloading(true);
+    setIsLoginError("something went wrong")
     event.preventDefault();
     setTimeout(() => {
       setIsloading(false)
@@ -78,6 +79,7 @@ export default function Register () {
       const handleRegisterSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setIsloading(true)
+        setIsRegisterError('something went wrong')
         console.log("Register Attempt:");
         console.log("Name:", registerName);
         console.log("Email:", registerEmail);

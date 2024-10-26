@@ -36,6 +36,7 @@ const Login = () => {
 
   const handleLoginSubmit = async (event: FormEvent<HTMLFormElement>) => {
     setIsloading(true);
+    setIsLoginError("something went wrong")
     event.preventDefault();
     setTimeout(() => {
       setIsloading(false)
@@ -66,6 +67,7 @@ const Login = () => {
     event.preventDefault();
     console.log('object');
     setIsloading(true)
+    setIsRegisterError('something went wrong')
     console.log("Name:", registerName);
     console.log("Email:", registerEmail);
     console.log("Password:", registerPassword);
@@ -191,7 +193,7 @@ const inputFocus = ()=>{
                     <label className="relative w-[100%]">
                       <input
                       onFocusCapture={inputFocus}
-                        required
+                        // required
                         defaultValue={loginEmail}
                         onChange={(e) => setLoginEmail(e.target.value)}
                         onFocus={() => setIsLoginError("")}
@@ -213,7 +215,7 @@ const inputFocus = ()=>{
                     <label className="relative w-[100%]">
                       <input
                       onFocusCapture={inputFocus}
-                        required
+                        // required
                         onChange={(e) => setLoginPassword(e.target.value)}
                         onFocus={() => setIsLoginError("")}
                         defaultValue={loginPassword}
@@ -305,7 +307,7 @@ const inputFocus = ()=>{
                     <label className="relative w-[100%]">
                       <input
                       onFocusCapture={inputFocus}
-                        required
+                        // required
                         onChange={(e) => setRegisterName(e.target.value)}
                         type="text"
                         className="peer outline-none focus:ring-1 focus:ring-[#3646AB] border-[#e5eaf2] border rounded-md  px-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
@@ -325,7 +327,7 @@ const inputFocus = ()=>{
                     <label className="relative w-[100%]">
                       <input
                       onFocusCapture={inputFocus}
-                        required
+                        // required
                         onChange={(e) => setRegisterEmail(e.target.value)}
                         type="text"
                         className="peer outline-none focus:ring-1 focus:ring-[#3646AB] border-[#e5eaf2] border rounded-md  px-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
@@ -345,7 +347,7 @@ const inputFocus = ()=>{
                     <label className="relative w-[100%]">
                       <input
                       onFocusCapture={inputFocus}
-                        required
+                        // required
                         onChange={(e) => setRegisterPassword(e.target.value)}
                         type="text"
                         className="peer outline-none focus:ring-1 focus:ring-[#3646AB] border-[#e5eaf2] border rounded-md  px-4 py-3 w-full focus:border-[#3B9DF8] transition-colors duration-300"
@@ -383,10 +385,10 @@ const inputFocus = ()=>{
                       {!isLoading ? (
                         <>
                           <span className="h-full w-full flex items-center justify-center transition-transform duration-300 ease-in-out transform btn-text">
-                            Login
+                            Register
                           </span>
                           <span className="absolute left-0 top-0 w-full flex items-center justify-center transition-transform duration-300 ease-in-out transform -translate-y-full opacity-0 btn-text-after">
-                            Login
+                          Register
                           </span>
                         </>
                       ) : (
