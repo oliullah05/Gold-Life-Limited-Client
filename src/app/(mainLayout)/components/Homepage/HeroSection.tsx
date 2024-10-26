@@ -22,15 +22,15 @@ export default function HeroSection() {
       <div className="primary-container  gap-10 flex lg:flex-row flex-col justify-between mx-auto items-stretch relative  w-full">
         {/* Text Section */}
         <div className="flex-1 flex flex-col justify-center   text-left h-full">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-secondary_color leading-tight">
+          <h1 className="text-3xl xs:text-4xl md:text-5xl lg:text-7xl font-bold text-secondary_color leading-tight">
             Expert Dental Care For your Bright Smile
           </h1>
-          <p className=" text-sm my-5 text-black">
+          <p className=" text-sm my-2 md:my-5 text-black">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
-          <div className="mt-8 flex xs:flex-row flex-col justify-start  items-start xs:items-center space-x-4">
+          <div className="mt-4 md:mt-8 flex xs:flex-row flex-col justify-start  items-start xs:items-center space-x-4">
             <button className="bg-blue-600 text-sm py-4 text-white font-semibold  px-4 rounded-lg hover:bg-blue-700 transition">
               Discover More
             </button>
