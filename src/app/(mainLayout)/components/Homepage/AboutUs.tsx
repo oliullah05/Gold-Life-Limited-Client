@@ -56,15 +56,15 @@ export default function AboutUs() {
       <div className="w-full lg:w-1/2  space-y-6  lg:ps-5 text-left">
         <div className="h-full flex justify-center  flex-col ">
           <p className="text-blue-600 font-medium text-left">About Us</p>
-          <h2 className="text-3xl md:text-4xl font my-2 lg:my-5 font-bold text-gray-900 leading-tight">
+          <h2 className=" text-2xl xs:text-3xl md:text-4xl font my-2 lg:my-5 font-bold text-gray-900 leading-tight">
             We Have Been Working In The Dental Treatment Profession For About 25
             Years Long.
           </h2>
-          <p className="text-black font-medium my-2 lg:my-4">
+          <p className="text-black xs:text-base text-sm font-medium my-2 lg:my-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore.
           </p>
-          <p className="text-gray-500 my-2 lg:my-4 text-sm">
+          <p className="text-gray-500 my-2 lg:my-4 text-xs xs:text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation sed do eiusmod
@@ -86,7 +86,7 @@ export default function AboutUs() {
                   <path d="M20 15.5C20 16.88 18.88 18 17.5 18H6.5C5.12 18 4 16.88 4 15.5V8.5C4 7.12 5.12 6 6.5 6H17.5C18.88 6 20 7.12 20 8.5V15.5zM12 10C12.5523 10 13 10.4477 13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11C11 10.4477 11.4477 10 12 10ZM7 15H17V13.5H7V15ZM15 10H17V8.5H15V10Z" />
                 </svg>
               </div>
-              <span className="ml-3 text-lg font-semibold">
+              <span className="ml-3 xs:text-lg font-semibold">
                 Emergency (+99) 012356987
               </span>
             </div>
