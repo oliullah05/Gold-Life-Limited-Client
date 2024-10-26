@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { registerUser } from "../server-actions/auth.server-actions";
 import ConfirmEmail, {
   lottieDefaultOptions,
-} from "../components/shared/confirmEmail";
+} from "../components/confirmEmail";
 import Lottie from "react-lottie";
 import Link from "next/link";
 

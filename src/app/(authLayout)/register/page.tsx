@@ -6,8 +6,8 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { registerUser } from "../server-actions/auth.server-actions";
-import Loader from "../components/shared/Loader";
-import ConfirmEmail, { lottieDefaultOptions } from "../components/shared/confirmEmail";
+import Loader from "../components/Loader";
+import ConfirmEmail, { lottieDefaultOptions } from "../components/confirmEmail";
 import Lottie from "react-lottie";
 
 
