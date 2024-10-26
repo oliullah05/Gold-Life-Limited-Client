@@ -139,11 +139,27 @@ body {
     @apply bg-background text-foreground;
   }
 }
+*{
+  /* border: 1px solid red; */
+}
 
 
 .primary-container {
   @apply max-w-6xl px-4 md:px-6 ;
   
+}
+
+.translateX-animation {
+  animation: TranslateX 4s ease-in-out infinite alternate;
+}
+
+@keyframes TranslateX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2rem); 
+  }
 }
 
 .playButtonAnimation {

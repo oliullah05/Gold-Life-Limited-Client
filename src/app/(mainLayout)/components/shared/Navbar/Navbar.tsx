@@ -79,7 +79,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items }) => {
         {items.length ? DownArrowIcon : null}
       </div>
       <div
-        className="dropdown-menu md:absolute relative   h-auto flex md:pt-8  overflow-hidden  shadow-lg "
+        className="dropdown-menu z-40 md:absolute relative   h-auto flex md:pt-8  overflow-hidden  shadow-lg "
         style={{
           maxHeight: isOpen ? "500px" : "0",
           opacity: isOpen ? 1 : 0,
