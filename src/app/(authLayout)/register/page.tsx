@@ -34,23 +34,28 @@ export default function Register () {
   const handleLoginSubmit = async(event: FormEvent<HTMLFormElement>) => {
     setIsloading(true);
     event.preventDefault();
+    setTimeout(() => {
+      setIsloading(false)
+      setIsRegisterEmailSend(true);
+    }, 3000);
 
-    const loginData = { email: loginEmail, password: loginPassword };
 
-    const loginResponse = await signIn("credentials", {
-      redirect: false,
-      ...loginData,
-    });
-    if (loginResponse?.ok) {
-      setIsloading(false);
-      toast.success("Logged in successfully");
-      router.replace("/dashboard");
-    }
-    if (!loginResponse?.ok && loginResponse?.error) {
-      setIsloading(false);
-      console.log(loginResponse?.error);
-      setIsLoginError(loginResponse.error);
-    }
+    // const loginData = { email: loginEmail, password: loginPassword };
+
+    // const loginResponse = await signIn("credentials", {
+    //   redirect: false,
+    //   ...loginData,
+    // });
+    // if (loginResponse?.ok) {
+    //   setIsloading(false);
+    //   toast.success("Logged in successfully");
+    //   router.replace("/dashboard");
+    // }
+    // if (!loginResponse?.ok && loginResponse?.error) {
+    //   setIsloading(false);
+    //   console.log(loginResponse?.error);
+    //   setIsLoginError(loginResponse.error);
+    // }
 
 
 
@@ -77,21 +82,27 @@ export default function Register () {
         console.log("Name:", registerName);
         console.log("Email:", registerEmail);
         console.log("Password:", registerPassword);
-    
-        const register = await registerUser({
-          username: registerName,
-          email: registerEmail,
-          password: registerPassword,
-        });
-        setIsloading(false)
-    
-        if (!register?.success) {
-          setIsRegisterError(register?.message);
-        }
-        if (register?.success) {
+        setTimeout(() => {
+          setIsloading(false)
           setIsRegisterEmailSend(true);
-          toast.success(register?.message);
-        }
+        }, 3000);
+    
+    
+    
+        // const register = await registerUser({
+        //   username: registerName,
+        //   email: registerEmail,
+        //   password: registerPassword,
+        // });
+        // setIsloading(false)
+    
+        // if (!register?.success) {
+        //   setIsRegisterError(register?.message);
+        // }
+        // if (register?.success) {
+        //   setIsRegisterEmailSend(true);
+        //   toast.success(register?.message);
+        // }
       };
 
   const [isMobile, setIsMobile] = useState<boolean>(
