@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section className="relative max-w-[100rem] mx-auto ">
+    <section className="relative max-w-[90rem] mx-auto ">
       <div className="absolute flip-box-animation bottom-0 right-10  2xl:right-20 z-0">
         <div className="flip-box-inner ">
           <Image
             src="https://medito-react.vercel.app/static/media/shape-2-1.8a9867136e2f43c78550.png"
             alt="Massage Background"
-            width={200}
+            width={200}  
             height={200}
             quality={100}
-            className="opacity-100 w-28 h-28 max-w-[11rem] xs:w-full xs:h-full object-scale-down xs:object-cover"
+            className="opacity-100 w-28 h-28 md:w-40 max-w-[16rem] xs:w-full xs:h-full object-scale-down xs:object-cover"
           />
         </div>
       </div>
