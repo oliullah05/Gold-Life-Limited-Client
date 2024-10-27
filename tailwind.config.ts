@@ -9,7 +9,24 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		screens: {
+			'xs': '480px',
+			'sm': '640px',
+			'md': '768px',
+			'lg': '1024px',
+			'xl': '1280px',
+			'2xl': '1536px',   			    
+		  },
   		colors: {
+			primary_color :"#076CEC",
+			
+			secondary_color:"#00102F",
+			silver_color:"#EFF6FF",
+			silver_color_dark:"#EEF5FF",
+
+
+
+
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
