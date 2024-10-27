@@ -8,7 +8,7 @@ import {MdOutlineMail} from "react-icons/md";
 const NewsletterForm = () => {
  
     return (
-        <section className="  w-full my-10 py-10 p-[20px] bg-primary_color relative">
+        <section className="   w-full my-10 py-10 p-[20px] bg-primary_color relative">
              <div className="absolute inset-0 z-0">
           <Image
             src={NewsLetterBg} 
@@ -30,13 +30,13 @@ const NewsletterForm = () => {
             </div>
 
             {/* content */}
-            <div className="sm:w-[70%] w-full lg:w-[50%] mx-auto">
+            <div className=" primary-container sm:w-[70%] w-full lg:w-[50%] mx-auto">
                 <h1 className="text-[2rem] sm:text-[3rem] mt-8 font-[800] capitalize text-white leading-[50px] text-center">newsletter</h1>
                 <p className="text-[1.1rem] mt-2 text-center text-white font-[300]">Stay updated
                     with our latest news and products.</p>
 
                 <form
-                    className="mt-5 sm:flex-row flex-col flex items-center justify-between gap-[15px]">
+                    className="mt-5  sm:flex-row flex-col flex items-center justify-between gap-[15px]">
                     <input placeholder="Your Email Address"
                            className="w-full py-3 px-4 outline-none focus:ring-0 rounded-md "/>
 
