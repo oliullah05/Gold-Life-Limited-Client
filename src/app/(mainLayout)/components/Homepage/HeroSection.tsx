@@ -7,10 +7,10 @@ const doctorImg =
 
 export default function HeroSection() {
   return (
-    <section className="relative  w-full  bg-blue-50  pt-12 pb-5 flex items-stretch">
+    <section className="relative  w-full  bg-silver_color  pt-12 pb-5 flex items-stretch">
       {/* Background image as an overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <Image 
           src={shapeBg}
           alt="Background"
           fill

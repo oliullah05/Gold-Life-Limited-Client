@@ -21,6 +21,8 @@ const config: Config = {
 			primary_color :"#076CEC",
 			
 			secondary_color:"#00102F",
+			silver_color:"#EFF6FF",
+			silver_color_dark:"#EEF5FF",
 
 
 
