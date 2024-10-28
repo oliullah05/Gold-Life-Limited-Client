@@ -146,7 +146,7 @@ body {
 
 .primary-container {
   @apply max-w-6xl px-4     ; 
-  
+
 }
 
 .flip-box-animation {
@@ -265,7 +265,7 @@ body {
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.5); /* Scale up */
+    transform: translate(-50%, -50%) scale(1.5); 
     opacity: 0;
   }
 }
@@ -276,7 +276,7 @@ body {
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.5); /* Scale up */
+    transform: translate(-50%, -50%) scale(1.5); 
     opacity: 0; 
   }
 }
@@ -304,7 +304,7 @@ body {
   position: absolute; 
   width: 60px; 
   height: 60px; 
-  background: rgba(255, 255, 255, 0.54); /* Changed to white */
+  background: rgba(255, 255, 255, 0.54);
   border-radius: 50%; 
   top: 50%; 
   left: 50%; 
@@ -316,13 +316,13 @@ body {
   animation: waveFade 0.8s ease-out forwards, 
              wavePulse 2s ease-out infinite, 
              pulse3 1.5s ease-out infinite,
-             pulse4 2.5s ease-out infinite; /* Added additional pulses */
+             pulse4 2.5s ease-out infinite; 
 }
 
 .playButtonAnimationWhite:after {
   animation: waveFade 0.8s ease-out forwards, 
              wavePulse2 2s ease-out infinite, 
-             pulse5 2s ease-out infinite; /* Added another pulse */
+             pulse5 2s ease-out infinite;
   animation-delay: 0.4s; 
 }
 

@@ -21,8 +21,8 @@ export default function Register () {
   const [isRegisterError, setIsRegisterError] = useState<string |null>('');
 
   // **Login Form States**
-  const [loginEmail, setLoginEmail] = useState<string>( "fahadabdullah377@gmail.com");
-  const [loginPassword, setLoginPassword] = useState<string>("zabist123");
+  const [loginEmail, setLoginEmail] = useState<string>( "developerJahid05@gmail.com");
+  const [loginPassword, setLoginPassword] = useState<string>("GoldLife123");
 
   // **Register Form States**
   const [registerName, setRegisterName] = useState<string>("");
