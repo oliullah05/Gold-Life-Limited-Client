@@ -101,7 +101,7 @@ export default function AboutUs() {
                   </svg>
                 </div>
                 <span className="ml-3 xs:text-lg font-semibold">
-                  Emergency (+99) 012356987
+                  Emergency (+88) 1902704311
                 </span>
               </div>
             </div>
