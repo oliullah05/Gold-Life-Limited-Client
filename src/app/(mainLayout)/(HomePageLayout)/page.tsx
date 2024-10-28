@@ -12,11 +12,11 @@ const page = () => {
 {/* <div className='w-20 h-20 rounded-full border ' style={{ background: 'conic-gradient(#076CEC 246deg, #fee800 246deg)' }}>
       
     </div> */}
+            <OurDoctor/>
             <HeroSection/>
             <AboutUs/>
             <OurService/>
             <NewsletterForm/>
-            <OurDoctor/>
         </div> 
     );
 };
