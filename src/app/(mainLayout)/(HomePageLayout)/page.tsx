@@ -8,11 +8,7 @@ import OurDoctor from '../components/Homepage/OurDoctor';
 const page = () => {
     return (
         <div>
-
-{/* <div className='w-20 h-20 rounded-full border ' style={{ background: 'conic-gradient(#076CEC 246deg, #fee800 246deg)' }}>
-      
-    </div> */}
-            <OurDoctor/>
+            {/* <OurDoctor/> */}
             <HeroSection/>
             <AboutUs/>
             <OurService/>
