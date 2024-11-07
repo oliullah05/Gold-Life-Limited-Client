@@ -1,11 +1,11 @@
 import BlogCard from "../../components/blog/BlogCard"
-import { CiSearch } from "react-icons/ci";
 import BlogSearch from "../../components/blog/BlogSearch";
 
 
 const page = () => {
   const blogPost = [
     {
+      id: "1",
       title: "5 Tips for a Healthy Lifestyle from Our Doctors",
       author: "Dr. Sarah Thompson",
       authorTitle: "Senior Health Specialist",
@@ -18,6 +18,7 @@ const page = () => {
       totalComment: 7
     },
     {
+      id: "2",
       title: "Understanding the Importance of Annual Health Screenings",
       author: "Dr. Mark Collins",
       authorTitle: "Preventive Medicine Specialist",
@@ -30,6 +31,7 @@ const page = () => {
       totalComment: 3
     },
     {
+      id: "3",
       title: "Managing Chronic Pain: Options and Resources",
       author: "Dr. Emily Foster",
       authorTitle: "Pain Management Specialist",
@@ -42,6 +44,7 @@ const page = () => {
       totalComment: 9
     },
     {
+      id: "4",
       title: "Nutrition Essentials for Recovery after Surgery",
       author: "Dr. Alex Wright",
       authorTitle: "Nutrition Specialist",
@@ -54,6 +57,7 @@ const page = () => {
       totalComment: 11
     },
     {
+      id: "5",
       title: "Mental Health Awareness: Breaking the Stigma",
       author: "Dr. Sophia Lee",
       authorTitle: "Mental Health Specialist",
@@ -79,7 +83,7 @@ const page = () => {
 
       <div className="primary-container mx-auto py-10 grid sm:grid-cols-2 md:grid-cols-3 justify-between gap-5 p-5 rounded-5">
         {blogPost.map((post, index) => (
-          <BlogCard key={index} author={post.author} title={post.title} content={post.content} image={post.image} tags={post.tags} date={post.date} totalLike={post.totalLike} totalComment={post.totalComment} authorImage={post.authorImage} authorTItle={post.authorTitle} />
+          <BlogCard key={index} author={post.author} title={post.title} content={post.content} image={post.image} tags={post.tags} date={post.date} totalLike={post.totalLike} totalComment={post.totalComment} authorImage={post.authorImage} authorTItle={post.authorTitle} id={post.id} />
         ))}
       </div>
     </div>

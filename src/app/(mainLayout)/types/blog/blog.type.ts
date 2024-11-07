@@ -1,4 +1,5 @@
 export interface TBlog {
+    id: string;
     title: string;
     author: string;
     authorImage: string;

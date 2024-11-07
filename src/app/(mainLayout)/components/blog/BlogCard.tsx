@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 
-const BlogCard : React.FC <TBlog> = ({title, content, tags, date, totalLike, totalComment, author, image, authorImage, authorTItle}) => {
+const BlogCard : React.FC <TBlog> = ({id, title, content, tags, date, totalLike, totalComment, author, image, authorImage, authorTItle}) => {
   return (
     <div className=" mx-auto w-full transition-all duration-300 hover:shadow-xl shadow-lg rounded-lg cursor-pointer" >
       <div className="relative h-64 overflow-hidden">
@@ -52,7 +52,7 @@ const BlogCard : React.FC <TBlog> = ({title, content, tags, date, totalLike, tot
           <p className="text-gray-600 text-sm mb-4">{content.split(" ", 20).join(" ")}...</p>
         </div>
 
-        <Link href="#"><Button >Read more</Button></Link>
+        <Link href={`/blog/${id}`}><Button >Read more</Button></Link>
 
         {/* Author info */}
         <div className="flex items-center mt-10">
